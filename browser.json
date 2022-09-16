@@ -1,0 +1,29 @@
+{
+    "ignoreDefaultArgs": true,
+    "ignoreHTTPSErrors": true,
+    "defaultViewport": null,
+    "headless": false,
+    "chromiumSandbox": false,
+    "args": [
+        "--tz=Asia/Bangkok",
+        "--no-first-run",
+        "--no-sandbox",
+        "--font-masking-mode=2",
+        "--origin-trial-disabled-features=ConditionalFocus",
+        "--password-store=basic",
+        "--disable-encryption",
+        "--disable-blink-features=AutomationControlled",
+        "--disable-infobars",
+        "--disable-notifications",
+        "--disable-dev-shm-usage",
+        "--disable-setuid-sandbox",
+        "--disable-gpu",
+        "--disable-background-timer-throttling",
+        "--disable-backgrounding-occluded-windows",
+        "--disable-renderer-backgrounding",
+        "--disable-background-networking",
+        "--disable-features=RendererCodeIntegrity"
+    ],
+    "executablePath": "./gologin/browser/orbita-browser/chrome.exe"
+
+}

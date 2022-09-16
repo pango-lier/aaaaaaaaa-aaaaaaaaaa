@@ -1,0 +1,9 @@
+{
+    "os": "win",
+    "googleServicesEnabled": false,
+    "lockEnabled": false,
+    "canvasMode": "noise",
+    "canvas": {
+      "mode": "noise"
+    }
+  }
