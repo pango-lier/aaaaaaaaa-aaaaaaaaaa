@@ -54,8 +54,6 @@ async function initBrowser(proxyInfo, proxyInfos) {
     let poision = p[Math.floor(Math.random() * p.length)] * 100;
     const ps = [0, 1, 2, 3, 4, 5, 6]
     let poision2 = ps[Math.floor(Math.random() * ps.length)] * 100;
-
-    const activeextension = require('path').join(__dirname, '..', 'gologin/extensions/chrome-extensions/ehllkhjndgnlokhomdlhgbineffifcbj')
     const activeextension1 = require('path').join(__dirname, '..', 'gologin/extensions/chrome-extensions/aapbdbdomjkkjkaonfhkkikfgjllcleb')
     const activeextension2 = require('path').join(__dirname, '..', 'gologin/extensions/chrome-extensions/cfohepagpmnodfdmjliccbbigdkfcgia')
     const activeextension3 = require('path').join(__dirname, '..', 'gologin/extensions/chrome-extensions/nddmmcpmdbkooddfjcohmlcfclhllgeh')
@@ -65,8 +63,8 @@ async function initBrowser(proxyInfo, proxyInfos) {
         ...SettingBrowser,
         args: [
             ...SettingBrowser.args,
-            `--disable-extensions-except=${extension},${activeextension},${activeextension1},${activeextension2},${activeextension3}`,
-            `--load-extension=${extension},${activeextension},${activeextension1},${activeextension2},${activeextension3}`,
+            `--disable-extensions-except=${activeextension1},${activeextension2},${activeextension3}`,
+            `--load-extension=${activeextension1},${activeextension2},${activeextension3}`,
             `--proxy-server=${IpProxy}:${ports}`,
             `--remote-debugging-port=${remote_debugging_port}`,
             `--user-data-dir=${SettingRun.ProfileDir}/${profile}`,
