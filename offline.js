@@ -92,8 +92,9 @@ async function closeBrowser(browser) {
 }
 
 async function run(txt, proxyInfo, called, proxyInfos) {
+    let browser;
     try {
-        const browser = await initBrowser(proxyInfo, proxyInfos);
+        browser = await initBrowser(proxyInfo, proxyInfos);
         const page = await browser.newPage();
         await page.waitForTimeout(1000);
         await runChangAccountGoogle(page);
