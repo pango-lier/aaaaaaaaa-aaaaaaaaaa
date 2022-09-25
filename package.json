@@ -1,0 +1,27 @@
+{
+  "name": "google-info",
+  "version": "1.0.0",
+  "description": "#Required https://www.youtube.com/watch?fbclid=IwAR2jfmYTQah-jde1FoEbX2Av8FMS3LhoDbhZhqKsmxCpZtZR6LmUTXcwnUw&v=LJj4O9HzTQs&feature=youtu.be",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pango-lier/aaaaaaaaa-aaaaaaaaaa.git"
+  },
+  "author": "pangolier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pango-lier/aaaaaaaaa-aaaaaaaaaa/issues"
+  },
+  "homepage": "https://github.com/pango-lier/aaaaaaaaa-aaaaaaaaaa#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "puppeteer": "^18.0.5",
+    "yarn": "^1.22.19"
+  }
+}
