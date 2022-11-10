@@ -37,6 +37,20 @@ async function getRandomPort() {
     }
     return port;
 }
+async function clearCache(profile) {
+    const currPath = `${SettingRun.ProfileDir}\\${profile}\\Default\\Cache\\Cache_Data`
+    const currPath2 = `${SettingRun.ProfileDir}\\${profile}\\GrShaderCache`
+    const currPath3 = `${SettingRun.ProfileDir}\\${profile}\\WidevineCdm`
+    const currPath4 = `${SettingRun.ProfileDir}\\${profile}\\OnDeviceHeadSuggestModel`
+    try {
+        await fs.rmSync(currPath, { recursive: true });
+        await fs.rmSync(currPath2, { recursive: true });
+        await fs.rmSync(currPath3, { recursive: true });
+        await fs.rmSync(currPath4, { recursive: true });
+    } catch (err) {
+        console.error(process.env.NODE_ENV, ` Error deleting Cache.`);
+    }
+}
 
 async function initBrowser(proxyInfo, proxyInfos) {
     const remote_debugging_port = await getRandomPort();
@@ -50,6 +64,7 @@ async function initBrowser(proxyInfo, proxyInfos) {
     })
     const Profiles = fs.readdirSync(SettingRun.ProfileDir)
     let profile = Profiles[Math.floor(Math.random() * Profiles.length)]
+    await clearCache(profile)
     const p = [-6, -4, -2, 0, 2, 4, 6, 8]
     let poision = p[Math.floor(Math.random() * p.length)] * 100;
     const ps = [0, 1, 2, 3, 4, 5, 6]
