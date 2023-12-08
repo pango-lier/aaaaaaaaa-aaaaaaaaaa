@@ -23,7 +23,6 @@
         "--disable-renderer-backgrounding",
         "--disable-background-networking",
         "--disable-features=RendererCodeIntegrity"
-    ],
-    "executablePath": "./gologin/browser/orbita-browser/chrome.exe"
+    ]
 
 }

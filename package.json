@@ -21,7 +21,7 @@
   "homepage": "https://github.com/pango-lier/aaaaaaaaa-aaaaaaaaaa#readme",
   "dependencies": {
     "fs": "^0.0.1-security",
-    "puppeteer": "^18.0.5",
+    "puppeteer": "^19.4.1",
     "yarn": "^1.22.19"
   }
 }
